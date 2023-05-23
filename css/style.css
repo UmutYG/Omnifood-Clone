@@ -1,0 +1,153 @@
+/* 
+01 --- TYPHORGRAPHY  
+    - Font sizes (px):
+    10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+ 
+    - Font weights:
+    Default : 400
+
+    -Line heights:
+    Default: 1
+
+02 --- COLORS
+    Primary: #e67e22
+
+    Tints: #fdf2e9
+    Shades: #cf711f
+    Accents:
+    Greys: #555  #333
+
+03 --- IMAGES
+
+04 --- ICONS 
+
+05 --- SHADOWS
+
+06 --- BORDER RADIUS
+
+
+07 --- WHITESPACE
+
+    SPACING SYSTEM (px):
+        2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+*/
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+
+body {
+    font-family: "Rubik", sans-serif;
+    line-height: 1;
+    font-weight: 400;
+    color: #555;
+}
+
+.margin-right-sm {
+    margin-right: 1.6rem !important;
+}
+
+.section-hero {
+    background-color: #fdf2e9;
+    padding: 9.6rem 0;
+
+}
+
+.hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 130rem;
+    margin: 0 auto;
+    align-items: center;
+    column-gap: 9.6rem;
+}
+
+
+.heading-primary {
+    font-size: 5.2rem;
+    margin-bottom: 4.8rem;
+    letter-spacing: -0.5px;
+    line-height: 1.05;
+    color: #333;
+}
+
+.hero-description {
+    font-size: 2rem;
+    line-height: 1.6;
+    margin-bottom: 6.4rem;
+}
+
+.btn:link, .btn:visited {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 1.6rem 3.2rem;
+    border-radius: 7px;
+
+    transition: background-color 0.3s;
+}
+
+
+.btn--cta:link, .btn--cta:visited{
+    background-color: #e67e22;
+}
+
+.btn--cta:hover, .btn--cta:active {
+    background-color: #cf711f;
+}
+
+.btn--outline:link, .btn-outline:visited {
+    background-color: #fff;
+    color: #555;
+}
+
+.btn--outline:hover, .btn--outline:active {
+    background-color: #fdf2e9;
+    box-shadow: inset 0 0 0 3px #fff;
+}
+
+
+.hero-img {
+    width: 100%;
+}
+
+.delivered { 
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+    margin-top: 8rem;
+}
+
+.delivered-imgs img {
+    width: 4.8rem;
+    height: 4.8rem;
+    border-radius: 50%;
+    margin-right: -1.6rem;
+    border: 3px solid #fdf2e9;
+}
+
+.delivered-imgs img:last-child {
+    margin: 0;
+}
+
+.delivered-text {
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.delivered-text span {
+    color: #cf711f;
+    font-weight: 700;
+}
+
