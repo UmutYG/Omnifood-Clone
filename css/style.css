@@ -5,9 +5,14 @@
  
     - Font weights:
     Default : 400
+    500
+    600
+    700
 
     -Line heights:
     Default: 1
+    Small: 1.05
+    Phrargraph: 1.6
 
 02 --- COLORS
     Primary: #e67e22
@@ -24,15 +29,13 @@
 05 --- SHADOWS
 
 06 --- BORDER RADIUS
-
+Default: 7px
 
 07 --- WHITESPACE
 
     SPACING SYSTEM (px):
         2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
 */
-
-
 
 * {
     margin: 0;
@@ -44,12 +47,60 @@ html {
     font-size: 62.5%;
 }
 
-
 body {
-    font-family: "Rubik", sans-serif;
+    font-family: 'Rubik', sans-serif;
     line-height: 1;
     font-weight: 400;
     color: #555;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fdf2e9;
+    height: 9.6rem;
+    padding: 0 4.8rem;
+}
+
+.logo {
+    height: 2.2rem;
+}
+
+.main-nav-list {
+    display: flex;
+    list-style: none;
+    gap: 3.2rem;
+    align-items: center;
+}
+
+.main-nav-link:link,
+.main-nav-link:active {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1.8rem;
+    color: #333;
+    font-weight: 500;
+
+    transition: all 0.3s;
+}
+
+.main-nav-link:hover,
+.main-nav-link:visited {
+    color: #cf711f;
+}
+
+.main-nav-link--cta:link,
+.main-nav-link--cta:active {
+    background-color: #e67e22;
+    color: #fff;
+    padding: 1.2rem 2.4rem;
+    border-radius: 7px;
+}
+
+.main-nav-link--cta:hover,
+.main-nav-link--cta:visited {
+    background-color: #cf711f;
 }
 
 .margin-right-sm {
@@ -58,8 +109,7 @@ body {
 
 .section-hero {
     background-color: #fdf2e9;
-    padding: 9.6rem 0;
-
+    padding: 4.8rem 0 9.6rem 0;
 }
 
 .hero {
@@ -69,8 +119,8 @@ body {
     margin: 0 auto;
     align-items: center;
     column-gap: 9.6rem;
+    padding: 0 2.4rem;
 }
-
 
 .heading-primary {
     font-size: 5.2rem;
@@ -86,7 +136,8 @@ body {
     margin-bottom: 6.4rem;
 }
 
-.btn:link, .btn:visited {
+.btn:link,
+.btn:visited {
     display: inline-block;
     text-decoration: none;
     color: #fff;
@@ -98,31 +149,33 @@ body {
     transition: background-color 0.3s;
 }
 
-
-.btn--cta:link, .btn--cta:visited{
+.btn--cta:link,
+.btn--cta:visited {
     background-color: #e67e22;
 }
 
-.btn--cta:hover, .btn--cta:active {
+.btn--cta:hover,
+.btn--cta:active {
     background-color: #cf711f;
 }
 
-.btn--outline:link, .btn-outline:visited {
+.btn--outline:link,
+.btn-outline:visited {
     background-color: #fff;
     color: #555;
 }
 
-.btn--outline:hover, .btn--outline:active {
+.btn--outline:hover,
+.btn--outline:active {
     background-color: #fdf2e9;
     box-shadow: inset 0 0 0 3px #fff;
 }
-
 
 .hero-img {
     width: 100%;
 }
 
-.delivered { 
+.delivered {
     display: flex;
     align-items: center;
     gap: 1.6rem;
@@ -150,4 +203,3 @@ body {
     color: #cf711f;
     font-weight: 700;
 }
-
