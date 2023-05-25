@@ -13,12 +13,13 @@
     Default: 1
     Small: 1.05
     Phrargraph: 1.6
+    1.8
 
 02 --- COLORS
     Primary: #e67e22
-
     Tints: #fdf2e9
     Shades: #cf711f
+    #fae5d3
     Accents:
     Greys: #555  #333
 
@@ -52,6 +53,26 @@ body {
     line-height: 1;
     font-weight: 400;
     color: #555;
+}
+
+.container {
+    width: 120rem;
+    margin: 0 auto;
+}
+
+.grid--cols-2 {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--cols-3 {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.grid {
+    display: grid;
+    align-items: center;
+    row-gap: 9.6rem;
+    column-gap: 4.8rem;
 }
 
 .header {
@@ -122,12 +143,23 @@ body {
     padding: 0 2.4rem;
 }
 
+.heading-primary,
+.heading-secondary,
+.heading-tertiary {
+    letter-spacing: -0.5px;
+    color: #333;
+
+}
+
 .heading-primary {
     font-size: 5.2rem;
     margin-bottom: 4.8rem;
-    letter-spacing: -0.5px;
     line-height: 1.05;
-    color: #333;
+}
+
+.heading-tertiary {
+    font-size: 3rem;
+    margin-bottom: 2.4rem;
 }
 
 .hero-description {
@@ -202,4 +234,75 @@ body {
 .delivered-text span {
     color: #cf711f;
     font-weight: 700;
+}
+
+.section-how {
+    padding: 9.6rem 0;
+}
+
+.heading-secondary {
+    font-size: 4.4rem;
+    margin-bottom: 9.6rem;
+}
+
+.subheading {
+    display: block;
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #cf711f;
+    letter-spacing: 0.75px;
+    margin-bottom: 1.6rem;
+}
+
+.step-number {
+    display: block;
+    color: #ddd;
+    font-size: 8.6rem;
+    font-weight: 500;
+    margin-bottom: 1.2rem;
+}
+
+
+
+.step-description {
+    font-size: 1.8rem;
+    line-height: 1.8;
+}
+
+.step-img-box {
+    display: flex;
+    justify-content: center;
+
+    position: relative;
+}
+
+.step-img-box::before, .step-img-box::after {
+    content: "";
+    display: block;
+    position: absolute;
+    /* 60% of padding of the parents height trick */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+}
+
+.step-img-box::before {
+    background-color: #fdf2e9;
+    width: 60%;
+    padding-bottom: 60%;
+    z-index: -1;
+
+
+}
+
+.step-img-box::after {
+    background-color: #fae5d3;
+    width: 45%;
+    padding-bottom: 45%;
+    z-index: -1;
+}
+
+.step-img {
+    width: 35%;
 }
