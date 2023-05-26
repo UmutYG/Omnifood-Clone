@@ -14,6 +14,14 @@
     box-shadow: 0 2.4rem 3.2rem rgba(0,0,0,0.075);
     border-radius: 11px;
     overflow: hidden;
+
+    transition: all 0.4s;
+}
+
+.meal:hover {
+    transform: translateY(-1.2rem);
+    box-shadow: 0 3.2rem 4.8rem rgba(0,0,0,0.06);
+
 }
 
 .meal-content {
@@ -54,7 +62,7 @@
 
     display: flex;
     flex-direction: column;
-    gap: 2.4rem;
+    gap: 2rem;
 }
 
 
@@ -90,4 +98,10 @@
     color: #e67e22;
     width: 3rem;
     height: 3rem;
+}
+
+.all-recipes {
+    font-size: 2rem;
+    text-align: center;
+
 }

@@ -19,7 +19,7 @@
 }
 
 .main-nav-link:link,
-.main-nav-link:active {
+.main-nav-link:visited {
     display: inline-block;
     text-decoration: none;
     font-size: 1.8rem;
@@ -30,12 +30,12 @@
 }
 
 .main-nav-link:hover,
-.main-nav-link:visited {
+.main-nav-link:active {
     color: #cf711f;
 }
 
 .main-nav-link--cta:link,
-.main-nav-link--cta:active {
+.main-nav-link--cta:visited {
     background-color: #e67e22;
     color: #fff;
     padding: 1.2rem 2.4rem;
@@ -43,6 +43,6 @@
 }
 
 .main-nav-link--cta:hover,
-.main-nav-link--cta:visited {
+.main-nav-link--cta:active {
     background-color: #cf711f;
 }
