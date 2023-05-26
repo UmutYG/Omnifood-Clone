@@ -12,8 +12,12 @@
             href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&family=Rubik:wght@400;500;600;700&display=swap"
             rel="stylesheet"
         />
-
-        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/common.css" />
+        <link rel="stylesheet" href="css/sections/header.css" />
+        <link rel="stylesheet" href="css/sections/hero.css" />
+        <link rel="stylesheet" href="css/sections/featured-in.css" />
+        <link rel="stylesheet" href="css/sections/how-it-works.css" />
+        <link rel="stylesheet" href="css/sections/meals.css" />
     </head>
     <body>
         <header class="header">
@@ -102,8 +106,14 @@
                 <h2 class="heading-featured-in">As featured in</h2>
                 <div class="logos">
                     <img src="img/logos/techcrunch.png" alt="Techcrunh logo" />
-                    <img src="img/logos/business-insider.png" alt="Business insider logo" />
-                    <img src="img/logos/the-new-york-times.png" alt="New York Times logo" />
+                    <img
+                        src="img/logos/business-insider.png"
+                        alt="Business insider logo"
+                    />
+                    <img
+                        src="img/logos/the-new-york-times.png"
+                        alt="New York Times logo"
+                    />
                     <img src="img/logos/forbes.png" alt="Forbes logo" />
                     <img src="img/logos/usa-today.png" alt="Usa Today logo" />
                 </div>
@@ -119,7 +129,7 @@
             </div>
 
             <div class="container">
-                <div class="grid grid--cols-2">
+                <div class="grid grid--cols-2 grid-align-v">
                     <!-- STEP 01 -->
                     <div class="step-text">
                         <span class="step-number">01</span>
@@ -189,5 +199,144 @@
                 </div>
             </div>
         </section>
+
+        <section class="section-meals">
+            <div class="container">
+                <span class="subheading">MEALS</span>
+                <h2 class="heading-secondary">
+                    Omnifood AI chooses from 5,000+ recipes
+                </h2>
+            </div>
+            <div class="container grid grid--cols-3">
+                <div class="meal">
+                    <img
+                        src="/img/meals/meal-1.jpg"
+                        alt="Japaneze Gyozas"
+                        class="meal-img"
+                    />
+                    <div class="meal-content">
+                        <div class="meal-tags-container">
+                            <span class="meal-tag meal-tag--vegeterian"
+                                >Vegeterian</span
+                            >
+                        </div>
+                        <p class="meal-title">Japanese Gyozas</p>
+                        <ul class="meal-attributes">
+                            <li class="meal-attribute">
+                                <ion-icon
+                                    class="meal-icon"
+                                    name="flame-outline"
+                                ></ion-icon>
+                                <span>650 Calories</span>
+                            </li>
+                            <li class="meal-attribute">
+                                <ion-icon
+                                    class="meal-icon"
+                                    name="restaurant-outline"
+                                ></ion-icon>
+                                <span>NutriScore &reg; 74</span>
+                            </li>
+                            <li class="meal-attribute">
+                                <ion-icon
+                                    class="meal-icon"
+                                    name="star-outline"
+                                ></ion-icon>
+                                <span>4.9 Rating (537)</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="meal">
+                    <img
+                        src="/img/meals/meal-1.jpg"
+                        alt="Avocado Salad"
+                        class="meal-img"
+                    />
+                    <div class="meal-content">
+                        <div class="meal-tags-container">
+                            <span class="meal-tag meal-tag--vegan">Vegan</span>
+                            <span class="meal-tag meal-tag--paleo">Paleo</span>
+                        </div>
+                        <p class="meal-title">Avocado Salad</p>
+                        <ul class="meal-attributes">
+                            <li class="meal-attribute">
+                                <ion-icon
+                                    class="meal-icon"
+                                    name="flame-outline"
+                                ></ion-icon>
+                                <span>400 Calories</span>
+                            </li>
+                            <li class="meal-attribute">
+                                <ion-icon
+                                    class="meal-icon"
+                                    name="restaurant-outline"
+                                ></ion-icon>
+                                <span>NutriScore &reg; 92</span>
+                            </li>
+                            <li class="meal-attribute">
+                                <ion-icon
+                                    class="meal-icon"
+                                    name="star-outline"
+                                ></ion-icon>
+                                <span>4.8 Rating (441)</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="meal-diets">
+                    <h3 class="heading-tertiary">
+                        Works with any diet:
+                    </h3>
+                    <ul class="diets-list">
+                        <li class="diet">
+                            <ion-icon class="diet-icon" name="checkmark-outline"></ion-icon>
+                            <span>Vegetarian</span>
+                        </li>
+                        <li class="diet">
+                            <ion-icon class="diet-icon" name="checkmark-outline"></ion-icon>
+                            <span>Vegan</span>
+                        </li>
+                        <li class="diet">
+                            <ion-icon class="diet-icon" name="checkmark-outline"></ion-icon>
+                            <span>Pescatarian</span>
+                        </li>
+                        <li class="diet">
+                            <ion-icon class="diet-icon" name="checkmark-outline"></ion-icon>
+                            <span>Gluten-free</span>
+                        </li>
+                        <li class="diet">
+                            <ion-icon class="diet-icon" name="checkmark-outline"></ion-icon>
+                            <span>Lactose-free</span>
+                        </li>
+                        <li class="diet">
+                            <ion-icon class="diet-icon" name="checkmark-outline"></ion-icon>
+                            <span>Keto</span>
+                        </li>
+                        <li class="diet">
+                            <ion-icon class="diet-icon" name="checkmark-outline"></ion-icon>
+                            <span>Paleo</span>
+                        </li>
+                        <li class="diet">
+                            <ion-icon class="diet-icon" name="checkmark-outline"></ion-icon>
+                            <span>Low FODMAP</span>
+                        </li>
+                        <li class="diet">
+                            <ion-icon class="diet-icon" name="checkmark-outline"></ion-icon>
+                            <span>Kid-friendly</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <script
+            type="module"
+            src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+        ></script>
+        <script
+            nomodule
+            src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+        ></script>
     </body>
 </html>

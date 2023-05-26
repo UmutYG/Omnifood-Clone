@@ -1,0 +1,48 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fdf2e9;
+    height: 9.6rem;
+    padding: 0 4.8rem;
+}
+
+.logo {
+    height: 2.2rem;
+}
+
+.main-nav-list {
+    display: flex;
+    list-style: none;
+    gap: 3.2rem;
+    align-items: center;
+}
+
+.main-nav-link:link,
+.main-nav-link:active {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1.8rem;
+    color: #333;
+    font-weight: 500;
+
+    transition: all 0.3s;
+}
+
+.main-nav-link:hover,
+.main-nav-link:visited {
+    color: #cf711f;
+}
+
+.main-nav-link--cta:link,
+.main-nav-link--cta:active {
+    background-color: #e67e22;
+    color: #fff;
+    padding: 1.2rem 2.4rem;
+    border-radius: 7px;
+}
+
+.main-nav-link--cta:hover,
+.main-nav-link--cta:visited {
+    background-color: #cf711f;
+}
