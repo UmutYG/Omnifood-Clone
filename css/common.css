@@ -21,7 +21,7 @@
     Shades: #cf711f
     #fae5d3
     Accents:
-    Greys: #555  #333
+    Greys: #555  #333 #6f6f6f
 
 03 --- IMAGES
 
@@ -155,7 +155,7 @@ strong {
 }
 
 .btn--outline:link,
-.btn-outline:visited {
+.btn--outline:visited {
     background-color: #fff;
     color: #555;
 }
