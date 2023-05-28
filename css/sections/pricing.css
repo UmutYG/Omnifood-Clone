@@ -1,0 +1,74 @@
+.section-pricing {
+    padding: 9.6rem 0;
+}
+
+.pricing-card {
+    padding: 4.8rem;
+    border-radius: 11px;
+    width: 75%;
+}
+
+.pricing-card--starter {
+   border: 2px solid #fdf2e9;
+   justify-self: end;
+
+}
+
+.pricing-card--complete {
+    background-color: #fdf2e9;
+    position: relative;
+    overflow: hidden;
+}
+
+.pricing-card--complete::after {
+    content: "BEST VALUE";
+    position: absolute;
+    color: #333;
+    font-size: 1.4rem;
+    font-weight: 700;
+    background-color: #ffe066;
+    width: 200px;
+    padding: 1rem 6rem;
+    text-align: center;
+    top: 5%;
+    right: -30%;
+
+    transform: rotate(45deg);
+
+}
+
+.header-pricing {
+    text-align: center;
+    margin-bottom: 4.8rem;
+}
+
+.pricing-title {
+    font-size: 2rem;
+    color: #cf711f;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-bottom: 3.2rem;
+}
+
+.pricing-value {
+    font-size: 6.4rem;
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 1.6rem;
+}
+
+.pricing-value span {
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+.pricing-text {
+    font-size: 1.8rem;
+    color: #6f6f6f;
+}
+
+.btn-cta-sign-up {
+    margin-top: 4.8rem;
+    text-align: center;
+  
+}

@@ -20,6 +20,8 @@
     Tints: #fdf2e9
     Shades: #cf711f
     #fae5d3
+    Badges:
+    #ffe066
     Accents:
     Greys: #555  #333 #6f6f6f
 
@@ -73,6 +75,10 @@ strong {
     grid-template-columns: repeat(3, 1fr);
 }
 
+.grid--cols-4 {
+    grid-template-columns: repeat(4, 1fr);
+}
+
 .grid {
     display: grid;
     row-gap: 9.6rem;
@@ -81,6 +87,11 @@ strong {
 
 .grid-align-v {
     align-items: center;
+}
+
+/* To add sibling grids some margin */
+.grid:not(:last-child) {
+    margin-bottom: 9.6rem;
 }
 
 
@@ -96,6 +107,26 @@ strong {
 
 .text-center {
     text-align: center;
+}
+
+.list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+}
+
+.list-item {
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+    font-size: 1.8rem;
+}
+
+.list-item-icon {
+    color: #e67e22;
+    width: 3rem;
+    height: 3rem;
 }
 
 
