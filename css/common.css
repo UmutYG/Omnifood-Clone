@@ -79,6 +79,11 @@ strong {
     grid-template-columns: repeat(4, 1fr);
 }
 
+.grid--cols-5 {
+    grid-template-columns: repeat(5, 1fr);
+}
+
+
 .grid {
     display: grid;
     row-gap: 9.6rem;
@@ -160,6 +165,13 @@ strong {
     font-size: 2rem;
     line-height: 1.6;
     margin-bottom: 6.4rem;
+}
+
+
+*:focus {
+    outline: none;
+    box-shadow: 0 0 0 0.8rem rgba(230, 125, 34, 0.5);
+
 }
 
 .btn:link,
