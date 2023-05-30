@@ -37,6 +37,7 @@
 .gallery {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    align-items: center;
     gap: 1.6rem;
     padding: 1.6rem;
 }
