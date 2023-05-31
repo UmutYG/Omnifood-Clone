@@ -48,6 +48,8 @@ Default: 7px
 
 html {
     font-size: 62.5%;
+
+    overflow: hidden;
 }
 
 body {
@@ -55,6 +57,8 @@ body {
     line-height: 1;
     font-weight: 400;
     color: #555;
+
+    overflow: hidden;
 }
 
 strong {
