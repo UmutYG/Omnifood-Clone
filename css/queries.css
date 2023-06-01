@@ -144,7 +144,6 @@
         visibility: visible;
 
         transform: translateX(0);
-
     }
 
     .main-nav-list {
@@ -158,5 +157,41 @@
 
     .nav-open .icon-mobile-nav[name='menu-outline'] {
         display: none;
+    }
+}
+
+/* BELOW 704px (smaller Tablets) */
+
+@media (max-width: 44em) {
+    .grid--cols-4,
+    .grid--cols-3 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .meal-diets {
+        grid-column: 1 / -1;
+        justify-self: center;
+    }
+
+    .heading-secondary {
+        margin-bottom: 4.8rem;
+    }
+
+    .pricing-card {
+        width: 100%;
+    }
+
+    .footer-grid {
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+    .nav-col {
+        grid-row: 1;
+        grid-column: span 2;
+        margin-bottom: 3.2rem;
+    }
+
+    .logo-col, .address-col {
+        grid-column: span 2;
     }
 }
