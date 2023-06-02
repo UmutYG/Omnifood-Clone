@@ -7,6 +7,15 @@ var headerEl = document.querySelector('.header');
 navBtnEl.addEventListener('click', function () {
     headerEl.classList.toggle('nav-open');
 });
+var allLinks = document.querySelectorAll("a:link");
+allLinks.forEach(function (link) {
+    link.addEventListener("click", function (e) {
+        var href = link.getAttribute("href");
+        // Close mobile naviagtion
+        if (link.classList.contains("main-nav-link"))
+            headerEl.classList.toggle("nav-open");
+    });
+});
 // Sticky nav
 var observer = new IntersectionObserver(function (entries) {
     var entry = entries[0];
