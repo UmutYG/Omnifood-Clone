@@ -158,6 +158,11 @@
     .nav-open .icon-mobile-nav[name='menu-outline'] {
         display: none;
     }
+
+    .main-nav-link:link,
+    .main-nav-link:visited {
+        font-size: 3rem;
+    }
 }
 
 /* BELOW 704px (smaller Tablets) */
@@ -191,7 +196,8 @@
         margin-bottom: 3.2rem;
     }
 
-    .logo-col, .address-col {
+    .logo-col,
+    .address-col {
         grid-column: span 2;
     }
 }
@@ -212,15 +218,14 @@
         padding: 2.4rem 0 6.4rem 0;
     }
 
-
-    .btn:link, .btn:visited {
+    .btn:link,
+    .btn:visited {
         padding: 2.4rem 1.6rem;
     }
 
     .hero-img {
         width: 80%;
     }
-
 
     .logos img {
         height: 1.2rem;

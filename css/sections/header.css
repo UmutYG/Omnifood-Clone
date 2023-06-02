@@ -54,6 +54,10 @@
     background: none;
     cursor: pointer;
     display: none;
+
+    /* focus effect fix */
+
+    z-index: 9999;
 }
 
 
